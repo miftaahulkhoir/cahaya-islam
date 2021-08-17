@@ -7,12 +7,19 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, withPrefix } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import useScript from "../hooks/useScript"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
+  useScript(withPrefix("js/jquery.min.js"))
+  useScript(withPrefix("js/bootstrap.min.js"))
+  useScript(withPrefix("js/circle-progress.min.js"))
+  useScript(withPrefix("js/jquery-plugin-collection.js"))
+  useScript(withPrefix("/js/script.js"))
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,24 +33,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+      <Footer />
     </>
   )
 }

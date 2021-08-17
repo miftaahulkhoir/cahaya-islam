@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Rumah Qur'an Cahaya Muslim`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `miftaahulkhoir@gmail.com`,
+    siteUrl: `https://gawekne.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,6 +30,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    // {
+    //   resolve: 'gatsby-plugin-load-script',
+    //   options: {
+    //     // disable: !process.env.SENTRY_DSN, // When do you want to disable it ?
+    //     src: 'js/script.js',
+    //     integrity:
+    //       'sha384-Nrg+xiw+qRl3grVrxJtWazjeZmUwoSt0FAVsbthlJ5OMpx0G08bqIq3b/v0hPjhB',
+    //     crossorigin: 'anonymous',
+    //     // onLoad: `() => Sentry.init({dsn:"${process.env.SENTRY_DSN}"})`,
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
