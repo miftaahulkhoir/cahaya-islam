@@ -1,9 +1,20 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "rumah-quran-cahaya-islam",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Website profil dari Rumah Quran Cahay Islam",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "authors": [
+    {
+      "name": "Miftahul Khoir",
+      "email": "miftaahulkhoir@gmail.com",
+      "url": "https://github.com/miftaahulkhoir/"
+    },
+    {
+      "name": "Fandi Agus Riyanto",
+      "email": "fandiagusriyanto@gmail.com",
+      "url": "https://github.com/FandiAR/"
+    }
+  ],
   "dependencies": {
     "gatsby": "^3.11.1",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
