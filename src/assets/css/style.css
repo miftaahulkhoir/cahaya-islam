@@ -849,7 +849,13 @@ img {
 }
 
 .navbar-brand>.gatsby-image-wrapper  {
-    max-width: 180px;
+    max-width: 50px;
+}
+
+.navbar-brand>.title  {
+    position: relative;
+    top: 11.5pt;
+    color: green !important;
 }
 
 .wpo-site-header .navigation>.container {
@@ -3322,8 +3328,16 @@ img {
     }
 }
 
-.wpo-site-footer .about-widget .logo {
-    max-width: 180px;
+.wpo-site-footer .about-widget .d-flex .logo {
+    max-width: 50px;
+}
+.d-flex {
+    display: flex !important;
+}
+.d-flex>.title {
+    position: relative;
+    top: 11.5pt !important;
+    color: green;
 }
 
 .wpo-site-footer .about-widget p,

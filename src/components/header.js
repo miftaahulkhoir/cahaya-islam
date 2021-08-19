@@ -4,29 +4,30 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
-  <header id="header" class="wpo-site-header wpo-header-style-3">
-    <nav class="navigation navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="open-btn">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+  <header id="header" className="wpo-site-header wpo-header-style-3">
+    <nav className="navigation navbar navbar-default">
+      <div className="container">
+        <div className="navbar-header">
+          <button type="button" className="open-btn">
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
-            <StaticImage src="../assets/images/logo.png" alt="logo" />
+          <a className="navbar-brand" href="index.html">
+            <StaticImage src="../assets/images/ponpesit.png" alt="logo" />
+            <span className="title">Cahaya Islam</span>
           </a>
         </div>
         <div
           id="navbar"
-          class="navbar-collapse collapse navbar-right navigation-holder"
+          className="navbar-collapse collapse navbar-right navigation-holder"
         >
-          <button class="close-navbar">
-            <i class="ti-close"></i>
+          <button className="close-navbar">
+            <i className="ti-close"></i>
           </button>
-          <ul class="nav navbar-nav">
-            <li class="menu-item-has-children">
+          <ul className="nav navbar-nav">
+            <li className="menu-item-has-children">
               <a href="#">Home</a>
             </li>
             <li>
@@ -46,9 +47,9 @@ const Header = ({ siteTitle }) => (
             </li>
           </ul>
         </div>
-        <div class="cart-search-contact">
-          <div class="btns">
-            <a href="contact.html" class="theme-btn">
+        <div className="cart-search-contact">
+          <div className="btns">
+            <a href="contact.html" className="theme-btn">
               Hubungi Sekarang
             </a>
           </div>
